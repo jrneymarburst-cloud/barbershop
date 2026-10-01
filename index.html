@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>NOM DU SALON – Barbier à Meknès</title>
+<meta name="description" content="Coupe, barbe et soin à Meknès. Tarifs, horaires et réservation par WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#12203a;--red:#c8102e;--paper:#eef1f4;--white:#fff;--muted:#5b667a}
+*{box-sizing:border-box;margin:0}
+body{font-family:"Work Sans",system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.55}
+h1,h2,.price{font-family:Oswald,Impact,sans-serif;letter-spacing:.01em}
+.pole{height:14px;background:repeating-linear-gradient(-45deg,var(--red) 0 14px,var(--white) 14px 28px,var(--ink) 28px 42px,var(--white) 42px 56px)}
+header{background:var(--ink);color:var(--white);padding:56px 20px 48px;text-align:center}
+h1{font-size:clamp(2.6rem,10vw,5rem);line-height:1;font-weight:700}
+header p{margin:14px auto 28px;max-width:30ch;color:#c9d2e3}
+.btn{display:inline-block;background:var(--red);color:var(--white);padding:14px 26px;border-radius:4px;font-weight:600;text-decoration:none;font-size:1.05rem}
+.btn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+main{max-width:720px;margin:0 auto;padding:0 20px}
+section{padding:44px 0 8px}
+h2{font-size:2rem;margin-bottom:18px;font-weight:700}
+.row{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding:12px 0;border-bottom:1px solid #cfd6e0}
+.price{font-size:1.3rem;color:var(--red);white-space:nowrap}
+.hours .row span:first-child{font-weight:600}
+.closed{color:var(--muted)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.grid img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:4px;background:#d5dbe4 center/cover}
+footer{margin-top:48px;background:var(--ink);color:#c9d2e3;text-align:center;padding:32px 20px 96px}
+footer a{color:var(--white)}
+.float{position:fixed;left:16px;right:16px;bottom:16px;text-align:center;box-shadow:0 4px 14px rgba(0,0,0,.3)}
+@media(min-width:720px){.float{left:auto;right:24px;bottom:24px}.grid{grid-template-columns:repeat(3,1fr)}}
+</style>
+</head>
+<body>
+<div class="pole"></div>
+<header>
+  <h1>NOM DU SALON</h1>
+  <p>Coupe, barbe et soin à Meknès.</p>
+  <a class="btn" href="https://wa.me/212600000000?text=Bonjour%2C%20je%20voudrais%20r%C3%A9server%20un%20rendez-vous.">Réserver sur WhatsApp</a>
+</header>
+<div class="pole"></div>
+
+<main>
+  <section id="tarifs">
+    <h2>Tarifs</h2>
+    <div class="row"><span>Coupe homme</span><span class="price">30 DH</span></div>
+    <div class="row"><span>Barbe</span><span class="price">20 DH</span></div>
+    <div class="row"><span>Coupe + barbe</span><span class="price">45 DH</span></div>
+    <div class="row"><span>Soin du visage</span><span class="price">50 DH</span></div>
+  </section>
+
+  <section id="horaires" class="hours">
+    <h2>Horaires</h2>
+    <div class="row"><span>Lundi – Samedi</span><span>09:00 – 21:00</span></div>
+    <div class="row"><span>Dimanche</span><span class="closed">Fermé</span></div>
+  </section>
+
+  <section id="photos">
+    <h2>Nos coupes</h2>
+    <div class="grid">
+      <img src="images/1.jpg" alt="Coupe réalisée au salon" loading="lazy">
+      <img src="images/2.jpg" alt="Coupe réalisée au salon" loading="lazy">
+      <img src="images/3.jpg" alt="Barbe taillée au salon" loading="lazy">
+      <img src="images/4.jpg" alt="Coupe réalisée au salon" loading="lazy">
+      <img src="images/5.jpg" alt="Barbe taillée au salon" loading="lazy">
+      <img src="images/6.jpg" alt="Coupe réalisée au salon" loading="lazy">
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>NOM DU SALON · Adresse, Meknès</p>
+  <p><a href="https://wa.me/212600000000">WhatsApp : 06 00 00 00 00</a></p>
+</footer>
+
+<a class="btn float" href="https://wa.me/212600000000?text=Bonjour%2C%20je%20voudrais%20r%C3%A9server%20un%20rendez-vous.">Réserver sur WhatsApp</a>
+</body>
+</html>
